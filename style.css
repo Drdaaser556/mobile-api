@@ -30,3 +30,41 @@ header{
     height: 50px;
     transition: 0.8s;
 }
+
+#highlight-section{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#highlight-section > h2{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 3px rgba(97, 46, 46, 0.5);
+}
+
+#highlight-section > p{
+    color: rgb(88, 88, 88);
+    text-align: center;
+    margin-bottom: 25px;
+    margin: 0 auto;
+}
+
+.buy-now-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+     
+}
+
+#cover-image-section{
+    border: 1px solid black;
+    width: 70%;
+    margin: 50px auto ;
+}
+
+#cover-image-section img{
+    border: 1px solid black;
+    width: 100%;
+}
