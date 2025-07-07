@@ -44,14 +44,17 @@
             <div id="search-container">
                 <div id="search-bar">
                     <i class="fa-brands fa-sistrix"></i>
-                    <input type="text" placeholder="Search your phone...">
+                    <input id="search-input-field" type="text" placeholder="Search your phone...">
                 </div>
                 <div class="search-button">
-                    <button class="btn">Search</button>
+                    <button onclick="handleSearch()" class="btn">Search</button>
                 </div>
             </div>
         </section>
-
+        <!-- Loading Section -->
+         <section id="loading-section">
+            <div id="loader-animation" class="loader hidden"></div>
+         </section>
         <!-- Card Section -->
         <section id="card-section">
             <!-- Card -->
@@ -190,6 +193,9 @@
         </section>
 
     </main>
+    <footer>
+
+    </footer>
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
