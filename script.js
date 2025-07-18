@@ -1,38 +1,40 @@
 function handleSearch() {
-    loaddingAnimationToggle(true);
-    const searchInputElement = document.getElementById("search-input-field");
-    const searchInputValue = searchInputElement.value;
+  loaddingAnimationToggle(true);
+  const searchInputElement = document.getElementById("search-input-field");
+  const searchInputValue = searchInputElement.value;
 
-    loadPhone(searchInputValue);
+  loadPhone(searchInputValue);
 }
 
 function loaddingAnimationToggle(isLoading) {
-    const loaderAnimation = document.getElementById("loader-animation");
-    if (isLoading) {
-        loaderAnimation.classList.remove("hidden");
-    } else {
-        loaderAnimation.classList.add("hidden");
-    }
+  const loaderAnimation = document.getElementById("loader-animation");
+  if (isLoading) {
+    loaderAnimation.classList.remove("hidden");
+  } else {
+    loaderAnimation.classList.add("hidden");
+  }
 }
 
 const loadPhone = async (searchText) => {
-    const res = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
-    console.log("Server Response: ", res);
-    const searverData = await res.json();
-    
-    displayPhone(searverData.data);
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/phones?search=${searchText}`
+  );
+  console.log("Server Response: ", res);
+  const searverData = await res.json();
+
+  displayPhone(searverData.data);
 };
 
 const displayPhone = (data) => {
-    console.log(data);
-    const cardContainer = document.getElementById("card-section");
-    cardContainer.innerHTML = ""; 
+  console.log(data);
+  const cardContainer = document.getElementById("card-section");
+  cardContainer.innerHTML = "";
 
-   data.forEach(phone => {
-       const productCard = document.createElement("div");
-       productCard.classList.add("col");
-       
-       productCard.innerHTML = `
+  data.forEach((phone) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("col");
+
+    productCard.innerHTML = `
        <div class="card-image">
                     <img src=${phone.image} alt="phone image">
                 </div>
@@ -52,8 +54,8 @@ const displayPhone = (data) => {
                         Show Details
                     </button>
                 </div>`;
-       console.log("Product Card: ", productCard);
+    console.log("Product Card: ", productCard);
     cardContainer.appendChild(productCard);
-   });
-    loaddingAnimationToggle(false);
-}
+  });
+  loaddingAnimationToggle(false);
+};

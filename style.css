@@ -1,206 +1,202 @@
-*{
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(241, 234, 234);
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(241, 234, 234);
 }
-header{
-    display: flex;
-    margin: 50px auto;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.btn{
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: rgb(8, 46, 233);
-    color: rgb(209, 236, 248);
-    padding: 10px 20px;
-    width: 120px;
-    height: 50px;
-    font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+header {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+  width: 90%;
 }
 
-.btn:hover{
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: rgb(23, 23, 143);
-    color: rgb(209, 236, 248);
-    padding: 10px 20px;
-    width: 120px;
-    height: 50px;
-    transition: 0.8s;
-    font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.btn {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(8, 46, 233);
+  color: rgb(209, 236, 248);
+  padding: 10px 10px;
+  width: 120px;
+  height: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#highlight-section{
-    width: 70%;
-    margin: 0 auto;
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(23, 23, 143);
+  color: rgb(209, 236, 248);
+  padding: 10px 10px;
+  width: 120px;
+  height: 50px;
+  transition: 0.8s;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#highlight-section > h2{
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 25px;
-    text-shadow: 2px 2px 3px rgba(97, 46, 46, 0.5);
+#highlight-section {
+  width: 70%;
+  margin: 0 auto;
 }
 
-#highlight-section > p{
-    color: rgb(88, 88, 88);
-    text-align: center;
-    margin-bottom: 25px;
-    margin: 0 auto;
+#highlight-section > h2 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 3px rgba(97, 46, 46, 0.5);
 }
 
-.buy-now-button{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-     
+#highlight-section > p {
+  color: rgb(88, 88, 88);
+  text-align: center;
+  margin-bottom: 25px;
+  margin: 0 auto;
 }
 
-#cover-image-section{
-    border: 1px solid transparent;
-    width: 70%;
-    margin: 50px auto ;
+.buy-now-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-#cover-image-section img{
-    border: 1px solid transparent;
-    width: 100%;
-    border-radius: 5px;
+#cover-image-section {
+  border: 1px solid transparent;
+  width: 70%;
+  margin: 50px auto;
 }
 
-#search-section{
-    width: 70%;
-    margin: 50px auto;
+#cover-image-section img {
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: 5px;
 }
 
-#search-section > h2{
-    text-align: center;  
-    margin-bottom: 20px;
+#search-section {
+  width: 70%;
+  margin: 50px auto;
 }
 
-#search-container{
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: rgb(243, 253, 206);
-    display: flex;
+#search-section > h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-#search-bar{
-    width: 70%;
-    background-color: rgb(243, 253, 206);
-}
-#search-button{
-    width: 30%;
-    display: flex;
-    justify-content: end;
-}
-
-#search-bar > input[type='text']{
-    width: 60%;
-    padding: 15px;
-    border: none;
-    outline: none;
-    background-color: rgb(243, 253, 206);
-   
+#search-container {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(243, 253, 206);
+  display: flex;
 }
 
-#card-section{
-    width: 80%;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+#search-bar {
+  width: 70%;
+  background-color: rgb(243, 253, 206);
+}
+#search-button {
+  width: 30%;
+  display: flex;
+  justify-content: end;
 }
 
-.card{
-    border: 1px solid rgb(56, 58, 30, 0.2);
-    border-radius: 10px;
-    padding: 20px;
+#search-bar > input[type="text"] {
+  width: 60%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 253, 206);
 }
 
-.card-image{
-    background-color: rgb(243, 253, 206);
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    width: 310px;
-    height: 210px;
+#card-section {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.card-image:hover{
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: rgb(229, 233, 197);
-    margin-bottom: 20px;
-    width: 310px;
-    height: 210px;
-    transition: 0.8s;
+.card {
+  border: 1px solid rgb(56, 58, 30, 0.2);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.card-image img{
-    width: 280px;
-    height: 180px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+.card-image {
+  background-color: rgb(243, 253, 206);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 310px;
+  height: 210px;
 }
 
-.card-title{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+.card-image:hover {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(229, 233, 197);
+  margin-bottom: 20px;
+  width: 310px;
+  height: 210px;
+  transition: 0.8s;
 }
 
-.card-description{
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(122, 113, 113);
+.card-image img {
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.card-price{
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-    margin-bottom: 20px;
+.card-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.card-button{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    
+.card-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(122, 113, 113);
 }
 
-#loading-section{
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+.card-price {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
-.hidden{
-    display: none;
+.card-button {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#loading-section {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /* HTML: <div class="loader"></div> */
@@ -208,12 +204,55 @@ header{
   width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: 
-    radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
-    conic-gradient(#0000 30%,#ffa516);
-  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
   animation: l13 1s infinite linear;
 }
-@keyframes l13{ 
-  100%{transform: rotate(1turn)}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer > div {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-text {
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  border: 1px solid rgb(56, 58, 30, 0.2);
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: gray;
 }
