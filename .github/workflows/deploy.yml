@@ -17,11 +17,6 @@ jobs:
         with:
           server: ${{ secrets.FTP_HOST }}
           password: ${{ secrets.FTP_PASSWORD }}
-<<<<<<< HEAD
-          username: ${{ secrets.FTP_USERNAME }}
-
-=======
-          username: ${{ secrets.FTP_USERNAME }}    
->>>>>>> cf34b895077867454892494d8c8a2d36bf037724
+          username: ${{ secrets.FTP_USERNAME }} 
           server-dir: /htdocs/
-          verbose: true
+          dangerous-clean-slate: true
