@@ -1,0 +1,219 @@
+*{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(241, 234, 234);
+}
+header{
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(8, 46, 233);
+    color: rgb(209, 236, 248);
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 143);
+    color: rgb(209, 236, 248);
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    transition: 0.8s;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#highlight-section{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#highlight-section > h2{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 3px rgba(97, 46, 46, 0.5);
+}
+
+#highlight-section > p{
+    color: rgb(88, 88, 88);
+    text-align: center;
+    margin-bottom: 25px;
+    margin: 0 auto;
+}
+
+.buy-now-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+     
+}
+
+#cover-image-section{
+    border: 1px solid transparent;
+    width: 70%;
+    margin: 50px auto ;
+}
+
+#cover-image-section img{
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#search-section{
+    width: 70%;
+    margin: 50px auto;
+}
+
+#search-section > h2{
+    text-align: center;  
+    margin-bottom: 20px;
+}
+
+#search-container{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(243, 253, 206);
+    display: flex;
+}
+
+#search-bar{
+    width: 70%;
+    background-color: rgb(243, 253, 206);
+}
+#search-button{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+#search-bar > input[type='text']{
+    width: 60%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 253, 206);
+   
+}
+
+#card-section{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border: 1px solid rgb(56, 58, 30, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-image{
+    background-color: rgb(243, 253, 206);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 310px;
+    height: 210px;
+}
+
+.card-image:hover{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(229, 233, 197);
+    margin-bottom: 20px;
+    width: 310px;
+    height: 210px;
+    transition: 0.8s;
+}
+
+.card-image img{
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card-description{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(122, 113, 113);
+}
+
+.card-price{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card-button{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#loading-section{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hidden{
+    display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#ffa516);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
