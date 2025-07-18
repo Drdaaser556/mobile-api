@@ -15,7 +15,9 @@ jobs:
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.ftpupload.net }}
-          username: ${{ secrets.if0_39501146 }}
-          password: ${{ secrets.hellovictor420 }}
+          server: ${{ secrets.FTP_HOST }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME }}
+
           server-dir: /htdocs/
+          verbose: true
